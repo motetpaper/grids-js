@@ -1,4 +1,4 @@
-import { GridsObject } from './grids.js'
+import { GridsObject } from './GridsObject.js'
 
 console.log(GridsObject.sq());
 console.log(GridsObject.tzg());

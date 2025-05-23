@@ -1,5 +1,5 @@
 //
-// grids.js
+// GridsObject.js
 // job    : create chinese practice paper grid patterns
 // git    : https://github.com/motetpaper/grids-js
 // lic    : MIT
@@ -44,8 +44,8 @@ export class GridsObject {
 
     // guidelines for the grid, diagonals and midpoints
 
-    ctx.setLineDash([10,5]);
-    ctx.lineWidth = 2;
+    ctx.setLineDash([50,25]);
+    ctx.lineWidth = 10;
     ctx.strokeStyle = dashcolor;
 
     ctx.moveTo(0,0);
@@ -65,7 +65,7 @@ export class GridsObject {
     ctx.stroke();
 
     // box border
-    ctx.lineWidth = 4;
+    ctx.lineWidth = 20;
     ctx.setLineDash([]);
     ctx.strokeStyle = color;
     ctx.strokeRect(0, 0, w, h);
@@ -79,7 +79,7 @@ export class GridsObject {
 
     const default_size = 225;
     const default_color = 'black';
-    const default_dashcolor = 'cccccc';
+    const default_dashcolor = '#cccccc';
 
     // default object
     obj = obj ?? {
@@ -106,8 +106,8 @@ export class GridsObject {
 
     // guidelines for the grid, midpoints
 
-    ctx.setLineDash([10,5]);
-    ctx.lineWidth = 2;
+    ctx.setLineDash([50,25]);
+    ctx.lineWidth = 8;
     ctx.strokeStyle = dashcolor;
 
     ctx.moveTo(size/2,0);
@@ -119,7 +119,7 @@ export class GridsObject {
     ctx.stroke();
 
     // box border
-    ctx.lineWidth = 4;
+    ctx.lineWidth = 20;
     ctx.setLineDash([]);
     ctx.strokeStyle = color;
     ctx.strokeRect(0, 0, w, h);
@@ -157,7 +157,7 @@ export class GridsObject {
     // no guide lines for this grid
 
     // box border
-    ctx.lineWidth = 4;
+    ctx.lineWidth = 20;
     ctx.setLineDash([]);
     ctx.strokeStyle = color;
     ctx.strokeRect(0, 0, w, h);
